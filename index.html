@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ericelma Batista | Ceramista & Mentora de Torno</title>
-    <!-- Carregando Tailwind CSS -->
+    <title>Ericelma Batista | Ceramista & Especialista em Torno</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Carregando Fontes Google: Cormorant Garamond (elegância artesanal) e Plus Jakarta Sans (leitura limpa) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Ícones Lucide -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-   
     <script>
         tailwind.config = {
             theme: {
@@ -24,89 +20,86 @@
                     colors: {
                         clay: {
                             50: '#FAF7F2',
-                            100: '#F2ECE1',
-                            200: '#E5D8C5',
-                            300: '#D4BFA3',
-                            400: '#C09F7A',
-                            500: '#A67B5B',
-                            600: '#8C5E3C',
+                            100: '#F3ECE1',
+                            200: '#E5D6C3',
+                            300: '#D2B89A',
+                            500: '#9E6B43',
+                            600: '#855532',
                             700: '#6E472B',
-                            800: '#4A301D',
-                            900: '#2C1D11',
+                            800: '#3D352E',
+                            900: '#241F1B',
                         },
-                        terracotta: '#9E472A',
-                        olive: '#4A5238',
-                        slateDark: '#262930'
+                        moss: {
+                            600: '#4F5D3F',
+                            700: '#3E4931',
+                        },
+                        slate: {
+                            850: '#232830',
+                        }
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-clay-50 text-clay-900 font-sans antialiased selection:bg-terracotta selection:text-white">
+<body class="bg-clay-50 text-clay-800 font-sans antialiased selection:bg-clay-300 selection:text-clay-900">
 
-    <!-- Barra de Navegação -->
-    <nav class="sticky top-0 z-50 bg-clay-50/90 backdrop-blur-md border-b border-clay-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="#" class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-clay-900">
-                    Ericelma Batista
-                </a>
-                <div class="hidden md:flex space-x-8 text-sm font-medium text-clay-700">
-                    <a href="#filosofia" class="hover:text-terracotta transition">Filosofia</a>
-                    <a href="#atuacao" class="hover:text-terracotta transition">Serviços & Ensino</a>
-                    <a href="#curriculo" class="hover:text-terracotta transition">Trajetória</a>
-                    <a href="#formato" class="hover:text-terracotta transition">Como Funciona</a>
-                </div>
-                <a href="https://wa.me/5519996032099?text=Olá%20Ericelma!%20Vi%20sua%20página%20de%20apresentação%20e%20gostaria%20de%20conversar."
-                   target="_blank"
-                   class="inline-flex items-center gap-2 bg-terracotta hover:bg-clay-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    <span>Entrar em Contato</span>
-                </a>
+    <!-- Navegação -->
+    <nav class="fixed w-full bg-clay-50/90 backdrop-blur-md z-50 border-b border-clay-200/70">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-2xl font-semibold tracking-wide text-clay-900">
+                Ericelma Batista
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-clay-700">
+                <a href="#filosofia" class="hover:text-clay-500 transition">Filosofia</a>
+                <a href="#atuacao" class="hover:text-clay-500 transition">Atuação & Serviços</a>
+                <a href="#metodologia" class="hover:text-clay-500 transition">Metodologia</a>
+                <a href="#parcerias" class="hover:text-clay-500 transition">Como Contratar</a>
             </div>
+            <a href="#contato" class="bg-clay-700 hover:bg-clay-600 text-clay-50 text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
+                Entrar em Contato
+            </a>
         </div>
     </nav>
 
-    <!-- Seção Principal (Hero) -->
-    <header class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hero / Apresentação Principal -->
+    <header class="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
+        <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Coluna de Texto -->
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-clay-200/70 text-clay-800 text-xs font-semibold tracking-wider uppercase">
-                        <span class="w-2 h-2 rounded-full bg-terracotta"></span>
-                        Ceramista • Mestre de Torno • Consultora
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-clay-100 border border-clay-200 text-clay-700 text-xs font-medium tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-moss-600"></span>
+                        Ceramista • Formação & Produção Artesanal
                     </div>
-                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-clay-900 leading-[1.1]">
-                        Aprender torno não é só subir uma peça. <span class="italic font-normal text-terracotta">É compreender o processo.</span>
+                    <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-clay-900 leading-[1.1]">
+                        Aprender torno não é só subir uma peça. <span class="italic font-normal text-clay-600">É compreender o processo.</span>
                     </h1>
-                    <p class="text-lg text-clay-700 leading-relaxed max-w-2xl">
-                        Especialista em cerâmica de torno e formação de ceramistas. Levo técnica, leitura de matéria-prima e produção artesanal diretamente para o seu ateliê ou espaço, com atendimento personalizado em todo o Brasil.
+                    <p class="text-lg md:text-xl text-clay-700/90 font-light leading-relaxed max-w-2xl">
+                        Especialista em torno cerâmico, dedicada à formação técnica consciente de novos ceramistas e à produção artesanal de peças autorais e sob encomenda em todo o Brasil.
                     </p>
                     <div class="pt-4 flex flex-wrap gap-4">
-                        <a href="https://wa.me/5519996032099" target="_blank" class="inline-flex items-center gap-2 bg-clay-900 hover:bg-terracotta text-white font-medium px-7 py-3.5 rounded-full transition shadow-md">
+                        <a href="#contato" class="bg-clay-800 hover:bg-clay-900 text-clay-50 px-7 py-3.5 rounded-full font-medium transition flex items-center gap-2 shadow-md">
                             Agendar Oficina ou Produção
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                         </a>
-                        <a href="#curriculo" class="inline-flex items-center gap-2 bg-white hover:bg-clay-100 text-clay-900 border border-clay-300 font-medium px-7 py-3.5 rounded-full transition">
-                            Ver Currículo & Experiência
+                        <a href="#atuacao" class="bg-transparent border border-clay-300 hover:border-clay-600 text-clay-800 px-7 py-3.5 rounded-full font-medium transition">
+                            Conhecer Serviços
                         </a>
                     </div>
-                   
-                    <!-- Destaques rápidos -->
-                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-clay-200">
+                    
+                    <!-- Destaques Rápidos / Credenciais -->
+                    <div class="pt-8 grid grid-cols-3 gap-6 border-t border-clay-200/80 max-w-lg">
                         <div>
-                            <p class="font-serif text-2xl sm:text-3xl font-bold text-terracotta">Itinerante</p>
-                            <p class="text-xs sm:text-sm text-clay-600">Atendimento no seu ateliê</p>
+                            <p class="font-serif text-3xl font-bold text-clay-900">100%</p>
+                            <p class="text-xs text-clay-600 mt-1">Atendimento personalizado no seu espaço</p>
                         </div>
                         <div>
-                            <p class="font-serif text-2xl sm:text-3xl font-bold text-terracotta">Sob Medida</p>
-                            <p class="text-xs sm:text-sm text-clay-600">Aulas sem precisar fechar turma</p>
+                            <p class="font-serif text-3xl font-bold text-clay-900">Brasil</p>
+                            <p class="text-xs text-clay-600 mt-1">Workshops itinerantes (SP, BA, ES e mais)</p>
                         </div>
                         <div>
-                            <p class="font-serif text-2xl sm:text-3xl font-bold text-terracotta">Alta Escala</p>
-                            <p class="text-xs sm:text-sm text-clay-600">Produção de grandes formatos</p>
+                            <p class="font-serif text-3xl font-bold text-clay-900">Sob Medida</p>
+                            <p class="text-xs text-clay-600 mt-1">Produção de grandes formatos e séries</p>
                         </div>
                     </div>
                 </div>
@@ -116,11 +109,12 @@
                     <div class="relative mx-auto max-w-md">
                         <div class="absolute -inset-4 bg-clay-200 rounded-[2.5rem] rotate-3 -z-10"></div>
                         <div class="bg-clay-800 rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5] relative flex flex-col justify-end p-8 text-white">
-                            <!-- Espaço reservado para foto real da Ericelma -->
-                            <img src="https://placehold.co/600x750/6E472B/FAF7F2?text=Foto+da+Ericelma+no+Torno"
-                                 alt="Ericelma Batista trabalhando no torno de cerâmica"
-                                 class="absolute inset-0 w-full h-full object-cover opacity-85 mix-blend-luminosity hover:scale-105 transition duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-clay-900 via-clay-900/40 to-transparent"></div>
+                            <!-- Foto vinculada ao arquivo salvo no seu repositório GitHub -->
+                            <img src="ericelma.jpg.jpg" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x750/6E472B/FAF7F2?text=Carregando+Foto...';"
+                                 alt="Ericelma Batista trabalhando no torno de cerâmica" 
+                                 class="absolute inset-0 w-full h-full object-cover opacity-90 hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-clay-900 via-clay-900/30 to-transparent"></div>
                             <div class="relative z-10">
                                 <p class="font-serif italic text-xl text-clay-200 mb-1">"Conto com a sua parceria para fazermos peças incríveis!"</p>
                                 <p class="text-sm font-medium tracking-wide uppercase text-clay-300">Ericelma Batista</p>
@@ -132,324 +126,182 @@
         </div>
     </header>
 
-    <!-- Seção Filosofia de Trabalho (Baseada nos posts do Instagram) -->
-    <section id="filosofia" class="py-20 bg-slateDark text-clay-50 rounded-t-[2.5rem] sm:rounded-t-[3.5rem]">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mb-16">
-                <span class="text-clay-400 text-xs font-semibold uppercase tracking-widest">Metodologia & Visão</span>
-                <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 leading-tight">
-                    Formar ceramistas não é apenas ensinar técnica. É ensinar postura.
-                </h2>
-                <p class="text-clay-300 mt-4 text-lg font-light">
-                    No torno, cada movimento dialoga com o tempo da argila. Meu trabalho foca em construir autonomia e compreensão real sobre o material.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Pilar 1 -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition">
-                    <div class="w-10 h-10 rounded-full bg-terracotta/20 text-clay-300 flex items-center justify-center mb-4">
-                        <i data-lucide="droplets" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-serif text-2xl font-semibold mb-2">Leitura da Umidade</h3>
-                    <p class="text-sm text-clay-300 leading-relaxed">
-                        Entender o ponto exato da massa, o tempo de secagem e como a argila responde ao toque em cada etapa.
-                    </p>
+    <!-- Manifesto / Filosofia de Ensino -->
+    <section id="filosofia" class="py-20 bg-slate-850 text-clay-50 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5">
+                    <span class="text-clay-300 text-xs font-semibold tracking-widest uppercase block mb-3">Filosofia de Trabalho</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-medium leading-tight">
+                        Formar ceramista não é ensinar uma técnica. <span class="italic text-clay-300">É ensinar postura.</span>
+                    </h2>
                 </div>
-
-                <!-- Pilar 2 -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition">
-                    <div class="w-10 h-10 rounded-full bg-terracotta/20 text-clay-300 flex items-center justify-center mb-4">
-                        <i data-lucide="layers" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-serif text-2xl font-semibold mb-2">Compactação Consciente</h3>
-                    <p class="text-sm text-clay-300 leading-relaxed">
-                        Estruturação sólida da base e revisão constante de espessura para evitar tensões futuras.
+                <div class="md:col-span-7 space-y-6 text-clay-200 font-light leading-relaxed text-lg">
+                    <p>
+                        A aula tradicional ensina apenas a técnica; o <strong class="text-white font-medium">processo constrói compreensão</strong>. No meu trabalho, cada aluno e parceiro entende não apenas o <em>"como fazer"</em>, mas o porquê de cada movimento, o que acontece se algo mudar e onde a peça pode falhar.
                     </p>
-                </div>
-
-                <!-- Pilar 3 -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition">
-                    <div class="w-10 h-10 rounded-full bg-terracotta/20 text-clay-300 flex items-center justify-center mb-4">
-                        <i data-lucide="search" class="w-5 h-5"></i>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                            <p class="font-serif text-xl text-clay-200 mb-1">Acompanhar o erro</p>
+                            <p class="text-sm text-clay-300/80">Entender a trinca, ajustar a base e nunca esconder as falhas do barro.</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                            <p class="font-serif text-xl text-clay-200 mb-1">Repetir e refinar</p>
+                            <p class="text-sm text-clay-300/80">Observar a argila e voltar para o básico sempre que necessário.</p>
+                        </div>
                     </div>
-                    <h3 class="font-serif text-2xl font-semibold mb-2">Acompanhar o Erro</h3>
-                    <p class="text-sm text-clay-300 leading-relaxed">
-                        Não esconder a trinca, mas investigar por que ela aconteceu, o que muda no gesto e como corrigir antes da queima.
-                    </p>
-                </div>
-
-                <!-- Pilar 4 -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition">
-                    <div class="w-10 h-10 rounded-full bg-terracotta/20 text-clay-300 flex items-center justify-center mb-4">
-                        <i data-lucide="refresh-cw" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-serif text-2xl font-semibold mb-2">Repetir & Refinar</h3>
-                    <p class="text-sm text-clay-300 leading-relaxed">
-                        Observar o movimento, voltar para o básico sempre que necessário e evoluir com consistência.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Serviços & Atuação -->
-    <section id="atuacao" class="py-20 bg-clay-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Áreas de Atuação / Currículo de Serviços -->
+    <section id="atuacao" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-terracotta text-xs font-semibold uppercase tracking-widest">O Que Eu Faço</span>
-                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-clay-900 mt-2">Soluções em Cerâmica</h2>
-                <p class="text-clay-700 mt-3">Atendimento flexível adaptado à necessidade de ateliês, escolas, marcas e alunos individuais.</p>
+                <span class="text-clay-600 text-xs font-semibold tracking-widest uppercase">Experiência & Serviços</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-semibold text-clay-900 mt-2">Como posso contribuir com o seu ateliê ou projeto</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-clay-200 flex flex-col justify-between">
+                <div class="bg-white border border-clay-200/80 rounded-3xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-clay-100 text-terracotta flex items-center justify-center mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-clay-100 text-clay-700 flex items-center justify-center mb-6">
                             <i data-lucide="sparkles" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-serif text-2xl font-bold text-clay-900 mb-3">Workshops & Imersões</h3>
-                        <p class="text-clay-600 text-sm leading-relaxed mb-6">
-                            Imersões profundas em processo de torno para ateliês parceiros (como o projeto realizado na <em>A Barronesa</em> em Lauro de Freitas - BA). Foco prático na evolução técnica dos participantes.
+                        <h3 class="font-serif text-2xl font-semibold text-clay-900 mb-3">Oficinas & Aulas Particulares</h3>
+                        <p class="text-clay-700 text-sm leading-relaxed mb-6">
+                            Atendimento individual ou em grupo diretamente no seu ateliê ou espaço. <strong>Não precisa montar turmas</strong> — vou até você para uma imersão prática adaptada ao seu nível.
                         </p>
                     </div>
-                    <ul class="space-y-2 text-xs font-medium text-clay-700 border-t border-clay-100 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-olive"></i> Turmas ou grupos fechados</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-olive"></i> Conteúdo programático personalizado</li>
+                    <ul class="space-y-2 text-xs font-medium text-clay-600 border-t border-clay-100 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-moss-600"></i> Centralização e subida de parede</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-moss-600"></i> Leitura do ponto da argila</li>
                     </ul>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-clay-200 flex flex-col justify-between">
+                <div class="bg-white border border-clay-200/80 rounded-3xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-clay-100 text-terracotta flex items-center justify-center mb-6">
-                            <i data-lucide="user-check" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-2xl bg-clay-100 text-clay-700 flex items-center justify-center mb-6">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-serif text-2xl font-bold text-clay-900 mb-3">Oficinas Particulares</h3>
-                        <p class="text-clay-600 text-sm leading-relaxed mb-6">
-                            Aulas individuais diretamente no seu ateliê ou espaço, <strong>sem necessidade de montar turmas</strong>. Ideal para quem deseja destravar técnicas específicas no torno com atenção 100% dedicada.
+                        <h3 class="font-serif text-2xl font-semibold text-clay-900 mb-3">Produção de Peças Sob Demanda</h3>
+                        <p class="text-clay-700 text-sm leading-relaxed mb-6">
+                            Confecção técnica no torno para ateliês, marcas, arquitetos e restaurantes. Domínio em <strong>peças de grande porte, vasos e conjuntos de pratos</strong> com acabamento refinado.
                         </p>
                     </div>
-                    <ul class="space-y-2 text-xs font-medium text-clay-700 border-t border-clay-100 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-olive"></i> Atendimento VIP individual</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-olive"></i> Diagnóstico de postura e ferramentas</li>
+                    <ul class="space-y-2 text-xs font-medium text-clay-600 border-t border-clay-100 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-moss-600"></i> Alta produtividade com argila sovada</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-moss-600"></i> Acabamento e torneamento de base</li>
                     </ul>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-clay-200 flex flex-col justify-between">
+                <div class="bg-white border border-clay-200/80 rounded-3xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-clay-100 text-terracotta flex items-center justify-center mb-6">
-                            <i data-lucide="shapes" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-2xl bg-clay-100 text-clay-700 flex items-center justify-center mb-6">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-serif text-2xl font-bold text-clay-900 mb-3">Produção de Peças</h3>
-                        <p class="text-clay-600 text-sm leading-relaxed mb-6">
-                            Execução técnica de peças em torno para marcas, designers e ateliês. Experiência na produção em série ou peças de destaque, como pratos amplos e vasos de grande porte.
+                        <h3 class="font-serif text-2xl font-semibold text-clay-900 mb-3">Workshops & Imersões Itinerantes</h3>
+                        <p class="text-clay-700 text-sm leading-relaxed mb-6">
+                            Parcerias com espaços criativos e escolas de cerâmica em diferentes estados (como Bahia, Espírito Santo e São Paulo) para vivências intensivas de torno.
                         </p>
                     </div>
-                    <ul class="space-y-2 text-xs font-medium text-clay-700 border-t border-clay-100 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-olive"></i> Diárias de produção no seu espaço</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-olive"></i> Execução e acabamento preciso</li>
+                    <ul class="space-y-2 text-xs font-medium text-clay-600 border-t border-clay-100 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-moss-600"></i> Passagem pelo ateliê A Barrones (BA)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-moss-600"></i> Agenda aberta para viagens</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Currículo & Trajetória Profissional -->
-    <section id="curriculo" class="py-20 bg-clay-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-clay-200 pb-6">
+    <!-- Os 5 Pilares do Processo -->
+    <section id="metodologia" class="py-20 bg-clay-100/70 border-y border-clay-200/70 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                 <div>
-                    <span class="text-terracotta text-xs font-semibold uppercase tracking-widest">Currículo Profissional</span>
-                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-clay-900 mt-1">Trajetória & Competências</h2>
+                    <span class="text-clay-600 text-xs font-semibold tracking-widest uppercase">Rigor Técnico</span>
+                    <h2 class="font-serif text-4xl font-semibold text-clay-900 mt-1">O que cada processo envolve</h2>
                 </div>
-                <button onclick="window.print()" class="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-medium text-clay-700 hover:text-terracotta bg-clay-200/60 px-4 py-2 rounded-full transition">
-                    <i data-lucide="printer" class="w-4 h-4"></i>
-                    Imprimir / Salvar PDF
-                </button>
+                <p class="text-sm text-clay-600 max-w-md">
+                    Do preparo da massa até o momento anterior ao forno, cada etapa é conduzida com atenção aos sinais do material.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
-                <!-- Coluna Esquerda: Habilidades e Regiões -->
-                <div class="md:col-span-5 space-y-8">
-                    <div class="bg-white p-6 rounded-2xl border border-clay-200">
-                        <h3 class="font-serif text-xl font-bold text-clay-900 mb-4 flex items-center gap-2">
-                            <i data-lucide="award" class="w-5 h-5 text-terracotta"></i>
-                            Especialidades Técnicas
-                        </h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-clay-100 text-clay-800 text-xs font-medium rounded-full">Torno Elétrico</span>
-                            <span class="px-3 py-1 bg-clay-100 text-clay-800 text-xs font-medium rounded-full">Peças de Grande Porte</span>
-                            <span class="px-3 py-1 bg-clay-100 text-clay-800 text-xs font-medium rounded-full">Pratos e Utilitários</span>
-                            <span class="px-3 py-1 bg-clay-100 text-clay-800 text-xs font-medium rounded-full">Preparação e Sova</span>
-                            <span class="px-3 py-1 bg-clay-100 text-clay-800 text-xs font-medium rounded-full">Acabamento e Retorno</span>
-                            <span class="px-3 py-1 bg-clay-100 text-clay-800 text-xs font-medium rounded-full">Didática de Ateliê</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-2xl border border-clay-200">
-                        <h3 class="font-serif text-xl font-bold text-clay-900 mb-4 flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-terracotta"></i>
-                            Atuação Geográfica
-                        </h3>
-                        <p class="text-sm text-clay-600 mb-3">Disponibilidade para viagens e residências temporárias em ateliês:</p>
-                        <ul class="space-y-2 text-sm text-clay-800 font-medium">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span> São Paulo (Base DDD 19 / Campinas e Região)</li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span> Bahia (Workshops em Lauro de Freitas)</li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span> Espírito Santo (Agenda confirmada 2026)</li>
-                        </ul>
-                    </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="bg-clay-50 p-6 rounded-2xl border border-clay-200">
+                    <span class="font-serif text-3xl text-clay-400 font-bold">01</span>
+                    <h4 class="font-semibold text-clay-900 mt-3 mb-1">Tempo de Secagem</h4>
+                    <p class="text-xs text-clay-600 leading-relaxed">Respeito ao ponto de couro ideal para cada etapa de manipulação.</p>
                 </div>
-
-                <!-- Coluna Direita: Linha do Tempo / Experiência -->
-                <div class="md:col-span-7 space-y-6">
-                    <div class="relative pl-6 border-l-2 border-clay-300 space-y-8">
-                        <!-- Item 1 -->
-                        <div class="relative">
-                            <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-terracotta border-4 border-clay-50"></span>
-                            <span class="text-xs font-semibold text-terracotta uppercase tracking-wider">Atual • Projetos Itinerantes</span>
-                            <h4 class="font-serif text-2xl font-bold text-clay-900 mt-0.5">Ceramista Independente & Mentora de Torno</h4>
-                            <p class="text-sm text-clay-600 mt-2 leading-relaxed">
-                                Atendimento presencial em ateliês parceiros e espaços particulares para produção de coleções cerâmicas e capacitação técnica individual ou em grupo.
-                            </p>
-                        </div>
-
-                        <!-- Item 2 -->
-                        <div class="relative">
-                            <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-clay-400 border-4 border-clay-50"></span>
-                            <span class="text-xs font-semibold text-clay-500 uppercase tracking-wider">Parceria & Ensino • Bahia</span>
-                            <h4 class="font-serif text-2xl font-bold text-clay-900 mt-0.5">Workshop de Imersão em Processo — A Barrones</h4>
-                            <p class="text-sm text-clay-600 mt-2 leading-relaxed">
-                                Condução de vivência prática em Lauro de Freitas (BA), focada na leitura da argila, controle de umidade, compactação e entendimento estrutural das peças no torno.
-                            </p>
-                        </div>
-
-                        <!-- Item 3 (Espaço para complementar) -->
-                        <div class="relative bg-clay-100/80 p-4 rounded-xl border border-dashed border-clay-400">
-                            <span class="text-xs font-semibold text-clay-600 uppercase tracking-wider">Espaço para Complementar</span>
-                            <h4 class="font-serif text-xl font-bold text-clay-800 mt-0.5">Formação Acadêmica, Cursos & Exposições</h4>
-                            <p class="text-xs text-clay-600 mt-1">
-                                <em>(Aqui incluiremos os anos de experiência, mestres com quem estudou, cursos técnicos e exposições realizadas assim que você me passar os detalhes!)</em>
-                            </p>
-                        </div>
-                    </div>
+                <div class="bg-clay-50 p-6 rounded-2xl border border-clay-200">
+                    <span class="font-serif text-3xl text-clay-400 font-bold">02</span>
+                    <h4 class="font-semibold text-clay-900 mt-3 mb-1">Leitura da Umidade</h4>
+                    <p class="text-xs text-clay-600 leading-relaxed">Sensibilidade tátil para evitar deformações e tensões na peça.</p>
+                </div>
+                <div class="bg-clay-50 p-6 rounded-2xl border border-clay-200">
+                    <span class="font-serif text-3xl text-clay-400 font-bold">03</span>
+                    <h4 class="font-semibold text-clay-900 mt-3 mb-1">Compactação Consciente</h4>
+                    <p class="text-xs text-clay-600 leading-relaxed">Alinhamento das partículas do barro para prevenir trincas no fundo.</p>
+                </div>
+                <div class="bg-clay-50 p-6 rounded-2xl border border-clay-200">
+                    <span class="font-serif text-3xl text-clay-400 font-bold">04</span>
+                    <h4 class="font-semibold text-clay-900 mt-3 mb-1">Revisão de Espessura</h4>
+                    <p class="text-xs text-clay-600 leading-relaxed">Equilíbrio estrutural entre base, parede e borda da cerâmica.</p>
+                </div>
+                <div class="bg-clay-50 p-6 rounded-2xl border border-clay-200">
+                    <span class="font-serif text-3xl text-clay-400 font-bold">05</span>
+                    <h4 class="font-semibold text-clay-900 mt-3 mb-1">Correção Pré-Queima</h4>
+                    <p class="text-xs text-clay-600 leading-relaxed">Acabamento minucioso antes de seguir para o forno.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Logística e Condições de Trabalho (Baseada no post de 16 de julho) -->
-    <section id="formato" class="py-20 bg-clay-200/50 border-t border-clay-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-[2rem] p-8 sm:p-12 shadow-sm border border-clay-200">
-                <div class="max-w-2xl mb-10">
-                    <span class="text-olive text-xs font-semibold uppercase tracking-widest">Transparência & Parceria</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-clay-900 mt-1">Como funciona a contratação de diárias</h2>
-                    <p class="text-clay-600 text-sm mt-2">
-                        Para garantir o máximo rendimento e qualidade na produção ou oficina em seu espaço, alinhamos previamente alguns pontos essenciais:
-                    </p>
+    <!-- Formato de Atendimento / Guia para Contratantes -->
+    <section id="parcerias" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-[2.5rem] border border-clay-200 p-8 md:p-14 shadow-sm">
+            <div class="text-center mb-10">
+                <span class="text-moss-600 text-xs font-semibold tracking-widest uppercase">Transparência & Organização</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-clay-900 mt-2">Como funciona o atendimento no seu espaço</h2>
+                <p class="text-sm text-clay-600 mt-2">Diretrizes práticas para garantir o melhor rendimento em dias de produção ou oficina.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-clay-50/80">
+                    <div class="p-2.5 bg-moss-600 text-white rounded-xl shrink-0">
+                        <i data-lucide="clock" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-clay-900 text-sm">Carga Horária</h4>
+                        <p class="text-xs text-clay-600 mt-1 leading-relaxed">Diárias de <strong>8 horas</strong> de trabalho focado (com possibilidade de hora extra combinada previamente).</p>
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="p-5 rounded-2xl bg-clay-50 border border-clay-100">
-                        <div class="flex items-center gap-3 mb-2">
-                            <i data-lucide="clock" class="w-5 h-5 text-olive"></i>
-                            <h3 class="font-semibold text-clay-900 text-sm">Carga Horária</h3>
-                        </div>
-                        <p class="text-xs text-clay-600 leading-relaxed">Diárias de <strong>8 horas de trabalho</strong> (com possibilidade de hora extra combinada caso exceda).</p>
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-clay-50/80">
+                    <div class="p-2.5 bg-clay-600 text-white rounded-xl shrink-0">
+                        <i data-lucide="calendar-days" class="w-5 h-5"></i>
                     </div>
-
-                    <div class="p-5 rounded-2xl bg-clay-50 border border-clay-100">
-                        <div class="flex items-center gap-3 mb-2">
-                            <i data-lucide="calendar-days" class="w-5 h-5 text-terracotta"></i>
-                            <h3 class="font-semibold text-clay-900 text-sm">Tempo de Acabamento</h3>
-                        </div>
-                        <p class="text-xs text-clay-600 leading-relaxed">Para produção de peças, consideramos mais de um dia caso o acabamento não seja feito pela equipe local.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-clay-50 border border-clay-100">
-                        <div class="flex items-center gap-3 mb-2">
-                            <i data-lucide="layers-3" class="w-5 h-5 text-olive"></i>
-                            <h3 class="font-semibold text-clay-900 text-sm">Preparo da Massa</h3>
-                        </div>
-                        <p class="text-xs text-clay-600 leading-relaxed">Argila previamente sovada e com boa textura para torno garante um volume de produção muito maior.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-clay-50 border border-clay-100">
-                        <div class="flex items-center gap-3 mb-2">
-                            <i data-lucide="disc" class="w-5 h-5 text-terracotta"></i>
-                            <h3 class="font-semibold text-clay-900 text-sm">Suporte para Torno</h3>
-                        </div>
-                        <p class="text-xs text-clay-600 leading-relaxed">Necessário suporte/madeiras adequadas para acomodar pratos e peças de grandes dimensões.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-clay-50 border border-clay-100">
-                        <div class="flex items-center gap-3 mb-2">
-                            <i data-lucide="clipboard-list" class="w-5 h-5 text-olive"></i>
-                            <h3 class="font-semibold text-clay-900 text-sm">Definição Prévia</h3>
-                        </div>
-                        <p class="text-xs text-clay-600 leading-relaxed">Alinhar antecipadamente os modelos e medidas aumenta significativamente a produtividade.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-clay-50 border border-clay-100">
-                        <div class="flex items-center gap-3 mb-2">
-                            <i data-lucide="utensils" class="w-5 h-5 text-terracotta"></i>
-                            <h3 class="font-semibold text-clay-900 text-sm">Alimentação</h3>
-                        </div>
-                        <p class="text-xs text-clay-600 leading-relaxed">Durante os dias de atendimento presencial, o almoço fica por conta do contratante.</p>
+                    <div>
+                        <h4 class="font-semibold text-clay-900 text-sm">Etapa de Acabamento</h4>
+                        <p class="text-xs text-clay-600 mt-1 leading-relaxed">Para produção de peças, recomenda-se mais de um dia caso o acabamento não seja feito pela equipe local.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Rodapé & Contato -->
-    <footer class="bg-clay-900 text-clay-200 py-16">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">Vamos criar juntos?</h2>
-            <p class="text-clay-400 max-w-lg mx-auto text-sm mb-8">
-                Entre em contato para consultar disponibilidade de agenda, solicitar orçamentos de produção ou agendar sua oficina particular.
-            </p>
-           
-            <div class="flex justify-center items-center gap-5 mb-12">
-                <!-- Botão WhatsApp (ícone verde integrado de forma elegante/camuflada) -->
-                <a href="https://wa.me/5519996032099"
-                   target="_blank"
-                   aria-label="Conversar pelo WhatsApp"
-                   title="Chamar no WhatsApp"
-                   class="group w-14 h-14 rounded-full bg-white/5 hover:bg-[#25D366]/20 border border-white/10 hover:border-[#25D366]/50 flex items-center justify-center transition-all duration-300 shadow-sm">
-                    <svg class="w-6 h-6 text-[#25D366] opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.76.459 3.479 1.331 4.996L2 22l5.166-1.355a9.927 9.927 0 0 0 4.865 1.273h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.663-1.037-5.167-2.92-7.05A9.903 9.903 0 0 0 12.031 2zm5.822 14.281c-.246.693-1.433 1.325-1.988 1.409-.513.077-1.162.11-1.875-.117-.433-.138-.988-.321-1.698-.628-2.989-1.291-4.941-4.301-5.09-4.499-.149-.199-1.216-1.617-1.216-3.084 0-1.468.769-2.189 1.042-2.487.273-.299.596-.373.795-.373.199 0 .397.002.571.01.183.009.429-.07.671.512.248.597.844 2.064.918 2.213.075.149.124.323.025.522-.099.199-.149.323-.298.497-.149.174-.313.389-.447.522-.149.149-.304.311-.131.609.174.298.772 1.274 1.658 2.063 1.139 1.015 2.099 1.33 2.397 1.479.298.149.472.124.646-.075.174-.199.745-.87.944-1.168.199-.298.397-.248.671-.149.273.099 1.739.82 2.037.969.298.149.497.224.571.348.075.125.075.721-.171 1.414z"/>
-                    </svg>
-                </a>
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-clay-50/80">
+                    <div class="p-2.5 bg-moss-600 text-white rounded-xl shrink-0">
+                        <i data-lucide="disc" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-clay-900 text-sm">Preparo & Suporte</h4>
+                        <p class="text-xs text-clay-600 mt-1 leading-relaxed">Argila previamente sovada em boa textura e suportes de torno prontos garantem máxima produtividade.</p>
+                    </div>
+                </div>
 
-                <!-- Botão Instagram (ícone discreto/camuflado) -->
-                <a href="https://instagram.com/ericelmabatista"
-                   target="_blank"
-                   aria-label="Visitar perfil no Instagram"
-                   title="Seguir no Instagram"
-                   class="group w-14 h-14 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 hover:border-clay-400/50 flex items-center justify-center transition-all duration-300 shadow-sm">
-                    <svg class="w-6 h-6 text-clay-300 group-hover:text-white group-hover:scale-110 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                    </svg>
-                </a>
-            </div>
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-clay-50/80">
+                    <div class="p-2.5 bg-clay-600 text-white rounded-xl shrink-0">
+         
 
-            <div class="border-t border-white/10 pt-8 text-xs text-clay-500 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p>© 2026 Ericelma Batista — Cerâmica Artesanal & Ensino.</p>
-                <p>Feito à mão, com processo e dedicação.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Inicializar ícones -->
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
-``` 
